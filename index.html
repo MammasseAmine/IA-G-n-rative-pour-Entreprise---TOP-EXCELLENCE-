@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme de Formation | IA Générative pour l'Entreprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d2c4a;
+            --secondary-color: #007bff;
+            --accent-color: #17a2b8;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #343a40;
+            --light-text-color: #6c757d;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--light-text-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .module {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .module h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .module h2 svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--secondary-color);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.8rem;
+        }
+
+        li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        strong {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .department-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background-color: #fdfdff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .card ul li::before {
+             color: var(--accent-color);
+        }
+
+        .livrables-module {
+            background-color: #e6f7ff;
+            border: 2px solid var(--accent-color);
+        }
+
+        .livrables-module h2 svg {
+            fill: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--light-text-color);
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .module {
+                padding: 1.5rem;
+            }
+            .module h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Programme de Formation</h1>
+        <p>L'IA Générative au Service de Votre Entreprise</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- MODULE 1 -->
+        <section class="module">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.198.75.75 0 0 1-1.492.154 7.505 7.505 0 0 0-14.986 0 .75.75 0 0 1-1.492-.154 9.005 9.005 0 0 1 5.9-8.198A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"/></svg>
+                Introduction à l'IA Générative et ChatGPT
+            </h2>
+            <ul>
+                <li>Comprendre les bases de l’IA générative</li>
+                <li>Présentation de <strong>ChatGPT / Gemini / Claude / Mistral</strong></li>
+                <li>Différences entre IA classique, IA générative et RPA</li>
+                <li>Cas d'usages réels dans les entreprises</li>
+                <li>Connaître les limites et précautions essentielles</li>
+                <li>Confidentialité et utilisation des données d'entreprise</li>
+                <li>Exemples concrets de gains (temps, coût, qualité)</li>
+                <li>Exemples d'utilisation réussie dans différents secteurs</li>
+            </ul>
+        </section>
+
+        <!-- MODULE 2 -->
+        <section class="module">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.75 3.5a.75.75 0 0 0-.75.75v15.5a.75.75 0 0 0 .75.75h14.5a.75.75 0 0 0 .75-.75V9.664a.75.75 0 0 0-.22-.53l-5.664-5.664a.75.75 0 0 0-.53-.22H4.75ZM5.5 4.25h8.5v5.5h5.5v9.5H5.5V4.25Z"/></svg>
+                Prise en Main de ChatGPT : Interface et Fonctionnalités
+            </h2>
+            <ul>
+                <li>Création de compte, découverte de l'interface utilisateur</li>
+                <li>Utilisation de l'historique, dossiers, et modèles personnalisés</li>
+                <li>Fonctionnalités avancées : <strong>vision, web, fichiers, plugins</strong></li>
+                <li>Chat continu vs nouveaux threads : stratégies d'utilisation</li>
+                <li>Les faiblesses : les "hallucinations" (erreurs factuelles), les biais, la méconnaissance des événements récents</li>
+                <li>Comment ChatGPT peut aider à automatiser les tâches répétitives</li>
+            </ul>
+        </section>
+
+        <!-- MODULE 3 -->
+        <section class="module">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.303 6.697-3.621 10.603a.75.75 0 1 1-1.41-.482l3.62-10.603a.75.75 0 0 1 1.41.482ZM6.75 12a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1-.75-.75Zm8.5 0a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1-.75-.75Z"/></svg>
+                Techniques de Prompt Engineering pour l'Entreprise
+            </h2>
+            <ul>
+                <li>Anatomie d'un prompt efficace et structuré</li>
+                <li>Structure d'un prompt : Les 4 piliers (<strong>Contexte, Tâche, Format, Contraintes</strong>)</li>
+                <li>Méthode <strong>CLEAR</strong> : (Contexte, Limitation, Exemples, Adaptabilité, Résultat)</li>
+                <li>La méthode <strong>R.C.T.F</strong> : (Rôle, Contexte, Tâche, Format)</li>
+                <li>Techniques avancées : prompt itératif, rôle assigné, chaînes de pensée (chain-of-thought)</li>
+                <li>Utilisation de contraintes et de formats de sortie spécifiques</li>
+                <li>Exemples : résumé, e-mail, analyse, brainstorming</li>
+                <li>Exercices pratiques avec cas d'entreprise</li>
+            </ul>
+        </section>
+
+        <!-- MODULE 4 -->
+        <section class="module">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.75 4.5a.75.75 0 0 1 .75-.75h11a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-.75.75h-11a.75.75 0 0 1-.75-.75v-1ZM19.5 3a.75.75 0 0 1 .75.75v16.5a.75.75 0 0 1-.75.75h-15a.75.75 0 0 1-.75-.75V8.126a.75.75 0 0 1 .22-.53L7.844 3.22A.75.75 0 0 1 8.374 3H19.5ZM8.5 4.5l-4 4.125V19.5h14V4.5H8.5Z"/></svg>
+                Cas d'Usage Métier par Département
+            </h2>
+            <div class="department-grid">
+                <div class="card">
+                    <h3>Marketing & Communication</h3>
+                    <ul>
+                        <li>Rédaction de contenus (blogs, posts, e-mails)</li>
+                        <li>Analyse de marché concurrentiel</li>
+                        <li>Génération d'idées de campagnes</li>
+                        <li>Réponses automatisées aux FAQ</li>
+                        <li>SEO : Recherche de mots-clés, meta descriptions</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Ressources Humaines</h3>
+                    <ul>
+                        <li>Rédaction de fiches de poste</li>
+                        <li>Analyse et présélection de CV</li>
+                        <li>Préparation de trames d'entretien</li>
+                        <li>Élaboration de plans d'intégration (onboarding)</li>
+                        <li>Analyse de sentiment des feedbacks et enquêtes</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Vente</h3>
+                    <ul>
+                        <li>Création d'argumentaires et de présentations</li>
+                        <li>Analyse de données commerciales issues du CRM</li>
+                        <li>Rédaction d'e-mails de prospection et de suivi</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Direction Générale</h3>
+                    <ul>
+                        <li>Synthèse de documents longs et de rapports</li>
+                        <li>Aide au suivi des KPI et à la rédaction de comptes-rendus</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>IT & Support</h3>
+                    <ul>
+                        <li>Génération de documentation technique et de code</li>
+                        <li>Aide au support technique (réponses aux tickets)</li>
+                        <li>Analyse de logs et résolution de problèmes</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Gestion de Projet</h3>
+                    <ul>
+                        <li>Création de plans de projet (descriptifs)</li>
+                        <li>Rédaction de "user stories"</li>
+                        <li>Brainstorming de solutions</li>
+                        <li>Automatisation de rapports d'avancement</li>
+                        <li>Analyse SWOT automatisée</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MODULE 5 -->
+        <section class="module">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.5 2.25a.75.75 0 0 1 .75.75v11.5a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75Zm.75 14.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                Limites, Éthique & Sécurité
+            </h2>
+            <ul>
+                <li>Gestion des biais et des hallucinations</li>
+                <li><strong>Données sensibles et confidentialité</strong> : ce qu'il ne faut jamais faire</li>
+                <li>Bonnes pratiques (RGPD, transparence)</li>
+                <li>Traçabilité et validation humaine des contenus générés</li>
+                <li>Comment établir des politiques d'entreprise claires</li>
+            </ul>
+        </section>
+
+        <!-- MODULE 6 -->
+        <section class="module">
+            <h2>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.5 5.5-3.5 3.5a.75.75 0 0 0 1.06 1.06l3.5-3.5a2.5 2.5 0 1 0-3.536-3.536L12 6.06l-3-3a.75.75 0 0 0-1.06 1.06l3 3-4.47 4.47a.75.75 0 0 0 1.06 1.06L12 8.182l4.97 4.97a4 4 0 1 1-5.657 5.657.75.75 0 0 0-1.06-1.06 5.5 5.5 0 0 0 7.778-7.778l-4.47-4.47 1.44-1.44a.75.75 0 0 0-1.06-1.06l-1.44 1.44-1.97-1.97a1 1 0 1 1 1.414-1.414l1.97 1.97 3.535-3.535a.75.75 0 0 0-1.06-1.06Z"/></svg>
+                Automatisation Avancée avec API & Intégrations
+            </h2>
+            <ul>
+                <li>Présentation des API (OpenAI, autres) et de leur potentiel</li>
+                <li>Utilisation avec des outils No-Code : <strong>Zapier, Make, Notion</strong></li>
+                <li>Exemples : création de rapports automatiques, bots internes (Slack/Teams)</li>
+                <li>L'idée d'une bibliothèque de prompts partagée pour l'équipe</li>
+            </ul>
+        </section>
+
+        <!-- MODULE 7 -->
+        <section class="module livrables-module">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.5 2.75a.75.75 0 0 0-1.5 0v18.5a.75.75 0 0 0 1.5 0V2.75ZM20.25 12a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1 0-1.5h12.75a.75.75 0 0 1 .75.75Zm0-4.25a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1 0-1.5h12.75a.75.75 0 0 1 .75.75Zm0 8.5a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1 0-1.5h12.75a.75.75 0 0 1 .75.75Z"/></svg>
+                Livrables de la Formation
+            </h2>
+            <ul>
+                <li>Guide PDF de prompts prêts à l'emploi</li>
+                <li>Modèle de charte d'utilisation de l'IA personnalisable</li>
+                <li>Exemples de modèles d'intégration simples (Zapier/Make)</li>
+                <li>Liste de ressources utiles pour continuer à apprendre</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Ce programme de formation a été structuré pour maximiser l'impact opérationnel de l'IA Générative dans votre organisation.</p>
+    </footer>
+
+</body>
+</html>

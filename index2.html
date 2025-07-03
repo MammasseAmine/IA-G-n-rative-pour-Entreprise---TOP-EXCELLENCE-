@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formation ChatGPT pour Entreprises</title>
+<style>
+    /* --- GLOBAL & SCREEN STYLES (Unchanged) --- */
+    :root {
+      --primary-color: #004080;
+      --secondary-color: #0055aa;
+      --light-bg: #f2f4f8;
+      --text-dark: #222;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light-bg);
+      color: var(--text-dark);
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #003366;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px;
+      background: var(--secondary-color);
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+    nav a:hover {
+      background: #0077cc;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    h1 {
+        font-size: 2.2em;
+        line-height: 1.2;
+    }
+    h2 {
+      font-size: 1.8em;
+      color: var(--primary-color);
+      margin-top: 0;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #eef;
+    }
+    h3 {
+        font-size: 1.3em;
+        color: var(--secondary-color);
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+    .emoji {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+
+    /* --- REFINED PROFESSIONAL PRINT STYLES (No Page Jumps) --- */
+    @media print {
+      
+      /* Basic page setup with margins and page numbers */
+      @page {
+        size: A4;
+        margin: 2cm; /* Generous, equal margins */
+
+        @bottom-center {
+          content: "Page " counter(page);
+          font-size: 10pt;
+          color: #666;
+        }
+      }
+
+      body {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 11pt;
+        color: #111;
+        background: white;
+      }
+
+      /* Hide screen-only elements */
+      nav, .emoji {
+        display: none;
+      }
+
+      /* Style the main title block */
+      header {
+        background: none;
+        color: black;
+        padding: 0;
+        text-align: left;
+        border-bottom: 2px solid black;
+        margin-bottom: 1.5cm;
+      }
+      
+      h1 {
+        font-size: 24pt;
+        font-weight: bold;
+      }
+
+      /* Style sections for a continuous flow */
+      section {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        /* Add a clear visual separator between sections */
+        border-top: 1px solid #ccc;
+        padding-top: 25px;
+        margin-top: 30px;
+      }
+      
+      /* Remove the top border and extra spacing for the very first section */
+      section:first-of-type {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+      }
+
+      /* Refine heading styles for document hierarchy */
+      h2 {
+        font-size: 16pt;
+        color: var(--primary-color); /* Retain brand color */
+        border-bottom: none;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        /* CRITICAL: Prevents a heading from being the last line on a page */
+        page-break-after: avoid; 
+      }
+      
+      h3 {
+        font-size: 13pt;
+        color: #333;
+        font-weight: bold;
+        margin-top: 20px;
+        page-break-after: avoid; /* Also prevent subheadings from being orphaned */
+      }
+
+      /* Tidy up lists and ensure they don't break in awkward places */
+      ul {
+        padding-left: 25px;
+        margin-top: 5px;
+        /* CRITICAL: Tries to keep list items together */
+        page-break-inside: avoid; 
+      }
+
+      li {
+        padding-bottom: 5px;
+      }
+
+      /* Make links look like normal text on print */
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+</style>
+</head>
+<body>
+  <header>
+    <h1><span class="emoji">🎓</span> Formation : Utiliser ChatGPT & IA Générative en Entreprise</h1>
+  </header>
+
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#prise-en-main">Prise en Main</a>
+    <a href="#prompting">Prompt Engineering</a>
+    <a href="#cas-usage">Cas d'Usage</a>
+    <a href="#ethique">Éthique & Sécurité</a>
+    <a href="#automation">Automatisation</a>
+    <a href="#livrables">Livrables</a>
+  </nav>
+
+  <section id="intro">
+    <h2><span class="emoji">📌</span> I. Introduction à l’IA Générative et ChatGPT</h2>
+    <ul>
+      <li>Comprendre les bases de l’IA générative</li>
+      <li>Présentation de ChatGPT / Gemini / Claude / Mistral</li>
+      <li>IA classique vs générative vs RPA</li>
+      <li>Cas d’usage réels : gains de temps, coût, qualité</li>
+      <li>Limites et précautions : confidentialité, données</li>
+      <li>Exemples concrets par secteur</li>
+    </ul>
+  </section>
+
+  <section id="prise-en-main">
+    <h2><span class="emoji">🧰</span> II. Prise en Main de ChatGPT / Fonctionnalités</h2>
+    <ul>
+      <li>Création de compte, interface, modèles personnalisés</li>
+      <li>Historique, organisation des chats, threads</li>
+      <li>Vision, fichiers, web, plugins</li>
+      <li>Hallucinations, biais, limites d’actualité</li>
+      <li>Automatiser des tâches répétitives</li>
+    </ul>
+  </section>
+
+  <section id="prompting">
+    <h2><span class="emoji">✍️</span> III. Techniques de Prompt Engineering</h2>
+    <ul>
+      <li>Anatomie d’un prompt structuré</li>
+      <li>Les 4 piliers : Contexte, Tâche, Format, Contraintes</li>
+      <li>Méthodes : CLEAR, RCTF, itératif, rôle assigné</li>
+      <li>Formats de sortie spécifiques</li>
+      <li>Cas pratiques avec prompts d’entreprise</li>
+    </ul>
+  </section>
+
+  <section id="cas-usage">
+    <h2><span class="emoji">🏢</span> IV. Cas d’Usage Métier</h2>
+    <h3>Marketing & Communication</h3>
+    <ul>
+      <li>Articles, réseaux sociaux, emails</li>
+      <li>Campagnes, SEO, FAQ</li>
+    </ul>
+    <h3>Ressources Humaines</h3>
+    <ul>
+      <li>CV, fiches de poste, onboarding</li>
+      <li>Préparation entretiens, feedbacks</li>
+    </ul>
+    <h3>Support Client</h3>
+    <ul>
+      <li>Tickets, réponses automatiques, sentiment</li>
+    </ul>
+    <h3>Vente</h3>
+    <ul>
+      <li>Argumentaires, CRM, analyse client</li>
+    </ul>
+    <h3>Direction Générale</h3>
+    <ul>
+      <li>Synthèse, rapports, KPI</li>
+    </ul>
+    <h3>IT / Projets</h3>
+    <ul>
+      <li>Code, documentation, user stories</li>
+      <li>Diagrammes Gantt, SWOT, rapports</li>
+    </ul>
+  </section>
+
+  <section id="ethique">
+    <h2><span class="emoji">⚖️</span> V. Limites, Éthique & Sécurité</h2>
+    <ul>
+      <li>Biais, hallucinations</li>
+      <li>Confidentialité, RGPD</li>
+      <li>Validation humaine, charte d’usage</li>
+    </ul>
+  </section>
+
+  <section id="automation">
+    <h2><span class="emoji">🤖</span> VI. Automatisation & Intégrations</h2>
+    <ul>
+      <li>API OpenAI, Zapier, Make</li>
+      <li>Google Sheets, Notion, bots internes</li>
+      <li>Bibliothèque de prompts partagée</li>
+    </ul>
+  </section>
+
+  <section id="livrables">
+    <h2><span class="emoji">📦</span> VII. Livrables Fournis</h2>
+    <ul>
+      <li>Guide PDF de prompts</li>
+      <li>Charte IA personnalisable</li>
+      <li>Modèles d’intégration</li>
+      <li>Ressources utiles</li>
+    </ul>
+  </section>
+</body>
+</html>
